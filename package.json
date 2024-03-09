@@ -1,0 +1,11 @@
+{
+  "name": "easeauth",
+  "version": "1.0.0",
+  "description": "a auth package for seamless authentication",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "basir khan",
+  "license": "ISC"
+}
