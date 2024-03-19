@@ -1,18 +1,13 @@
 import { defineConfig } from "rollup";
-import babel from "@rollup/plugin-babel";
+import typescript from "@rollup/plugin-typescript";
 
 export default defineConfig({
-  input: "src/index.js",
+  input: "src/index.ts",
   output: {
     dir: "dist",
     format: "es",
     name: "easeauth",
   },
   external: ["react", "react-dom"],
-  plugins: [
-    babel({
-      babelHelpers: 'bundled',
-      presets: ["@babel/preset-react"]
-    })
-  ],
+  plugins: [typescript({ tsconfig: "tsconfig.json" })],
 });
